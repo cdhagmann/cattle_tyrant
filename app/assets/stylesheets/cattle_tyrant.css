@@ -1,4 +1,4 @@
-#heavens-door {
+#cattle-tyrant {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -7,16 +7,17 @@
   z-index: 9999;
 }
 
-#heavens-door-close, #heavens-door-copy {
+#cattle-tyrant-close,
+#cattle-tyrant-copy {
   display: none;
 }
 
-.heavens-door-button {
+.cattle-tyrant-button {
   position: relative;
   top: 0;
 }
 
-.heavens-door-button:active {
+.cattle-tyrant-button:active {
   top: 2px;
-  opacity: .6;
+  opacity: 0.6;
 }

@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-# Specify your gem's dependencies in heavens_door.gemspec
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in cattle_tyrant.gemspec
 gemspec
