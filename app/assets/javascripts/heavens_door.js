@@ -3,8 +3,13 @@
     fn();
   } else {
     if ((typeof(Turbolinks) !== 'undefined') && (Turbolinks)) {
-      document.addEventListener('turbolinks:load', fn);
-    } else {
+      if (Turbolinks.EVENTS && Turbolinks.EVENTS.LOAD) {  // turbolinks-classic
+        document.addEventListener(Turbolinks.EVENTS.LOAD, fn);
+        document.addEventListener('DOMContentLoaded', fn);
+      } else {  // turbolinks
+        document.addEventListener('turbolinks:load', fn);
+      }
+    } else {  // no turbolinks
       document.addEventListener('DOMContentLoaded', fn);
     }
   }
